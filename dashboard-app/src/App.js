@@ -3,6 +3,7 @@ import "./App.css";
 import { Container, CssBaseline, Grid, ThemeProvider } from "@mui/material";
 import { SideBar } from "./components/Sidebar";
 import { createTheme } from "@mui/material/styles";
+import { Content } from "./components/Content";
 
 const theme = createTheme({
   typography: {
@@ -26,16 +27,26 @@ function App() {
       <CssBaseline />
       <ThemeProvider theme={theme}>
         <Container maxWidth={false} disableGutters>
-          <Grid container>
-            <Grid
-              item
-              sx={{
-                border: "1px solid grey",
-                backgroundColor: "#d6fff9",
-              }}
-            >
+          <Grid container sx={{ backgroundColor: "rgb(245 245 245)" }}>
+            <Grid item>
               <SideBar />
             </Grid>
+            <div
+              style={{
+                marginTop: "4rem",
+                marginLeft: "2rem",
+              }}
+            >
+              <Content />
+            </div>
+            <div
+              style={{
+                marginTop: "9rem",
+                marginLeft: "2rem",
+              }}
+            >
+              Lists
+            </div>
           </Grid>
         </Container>
       </ThemeProvider>
