@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Container, CssBaseline, Grid, ThemeProvider } from "@mui/material";
+import { SideBar } from "./components/Sidebar";
+import { createTheme } from "@mui/material/styles";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      "NotoSans",
+      "NotoSansThai",
+      "Arial",
+      "Roboto",
+      "'Helvetica Neue'",
+      "sans-serif",
+    ].join(","),
+  },
+  shape: {
+    borderRadius: 15,
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <Container maxWidth={false} disableGutters>
+          <Grid container>
+            <Grid
+              item
+              sx={{
+                border: "1px solid grey",
+                backgroundColor: "#d6fff9",
+              }}
+            >
+              <SideBar />
+            </Grid>
+          </Grid>
+        </Container>
+      </ThemeProvider>
+    </>
   );
 }
 
