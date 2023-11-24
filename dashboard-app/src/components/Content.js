@@ -237,6 +237,167 @@ export const Content = () => {
           </div>
         </div>
       </div>
+      <div style={{ display: "flex", gap: "15px" }}>
+        <div
+          style={{
+            width: "35%",
+            backgroundColor: "white",
+            padding: "7px",
+            marginTop: "12px",
+          }}
+        >
+          <p
+            style={{
+              margin: "0px",
+              padding: "2px",
+              borderBottom: "1px solid #ccc",
+              fontWeight: "500",
+            }}
+          >
+            Price Effect :
+          </p>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              flexWrap: "wrap",
+              height: "160px",
+            }}
+          >
+            {[
+              1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+              20,
+            ].map((d, index) => (
+              <span>
+                <span
+                  style={{
+                    fontSize: "12px",
+                    color: "orange",
+                    marginRight: "5px",
+                  }}
+                >
+                  {index + 1}
+                </span>
+                <span
+                  style={{
+                    marginRight: "4px",
+                    fontSize: "14px",
+                    textDecoration: "underline",
+                  }}
+                >
+                  -2.42
+                </span>
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div
+          style={{
+            width: "35%",
+            backgroundColor: "white",
+            padding: "7px",
+            marginTop: "12px",
+          }}
+        >
+          <p
+            style={{
+              margin: "0px",
+              padding: "2px",
+              borderBottom: "1px solid #ccc",
+              fontWeight: "500",
+            }}
+          >
+            Gram Effect :
+          </p>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              flexWrap: "wrap",
+              height: "160px",
+            }}
+          >
+            {[
+              1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+              20,
+            ].map((d, index) => (
+              <span>
+                <span
+                  style={{
+                    fontSize: "12px",
+                    marginRight: "5px",
+                  }}
+                >
+                  {index + 1}
+                </span>
+                <span
+                  style={{
+                    marginRight: "4px",
+                    fontSize: "14px",
+                    textDecoration: "underline",
+                  }}
+                >
+                  -2.42
+                </span>
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div
+          style={{
+            width: "35%",
+            backgroundColor: "white",
+            padding: "7px",
+            marginTop: "12px",
+          }}
+        >
+          <p
+            style={{
+              margin: "0px",
+              padding: "2px",
+              borderBottom: "1px solid #ccc",
+              fontWeight: "500",
+            }}
+          >
+            Total Effect :
+          </p>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              flexWrap: "wrap",
+              height: "160px",
+            }}
+          >
+            {[
+              1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+              20,
+            ].map((d, index) => (
+              <span>
+                <span
+                  style={{
+                    fontSize: "12px",
+                    marginRight: "5px",
+                  }}
+                >
+                  {index + 1}
+                </span>
+                <span
+                  style={{
+                    marginRight: "4px",
+                    fontSize: "14px",
+                    textDecoration: "underline",
+                  }}
+                >
+                  -2.42
+                </span>
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
