@@ -7,14 +7,7 @@ import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import GpsFixedIcon from "@mui/icons-material/GpsFixed";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import CollectionsIcon from "@mui/icons-material/Collections";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  Label,
-  ResponsiveContainer,
-} from "recharts";
+import { LineChart, Line, XAxis, YAxis, Label } from "recharts";
 
 function createData(time, amount) {
   return { time, amount };

@@ -4,6 +4,7 @@ import { Container, CssBaseline, Grid, ThemeProvider } from "@mui/material";
 import { SideBar } from "./components/Sidebar";
 import { createTheme } from "@mui/material/styles";
 import { Content } from "./components/Content";
+import { MeasureAndFilter } from "./components/MeasureAndFilter";
 
 const theme = createTheme({
   typography: {
@@ -42,10 +43,10 @@ function App() {
             <div
               style={{
                 marginTop: "9rem",
-                marginLeft: "2rem",
+                marginLeft: "1rem",
               }}
             >
-              Lists
+              <MeasureAndFilter />
             </div>
           </Grid>
         </Container>
